@@ -13,8 +13,8 @@ rng(1);
 nArms = 1;
 stat = true;
 alphas = 0;
-nIters = 500;
-initEst = zeros(nArms, 1);
+nIters = 2000;
+initEst = ones(nArms, 1);
 epsilons = 1;
 epsconst = false;
 
