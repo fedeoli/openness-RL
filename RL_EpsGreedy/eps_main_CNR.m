@@ -13,17 +13,17 @@ rng(1);
 nArms = 1;
 stat = true;
 alphas = 0;
-nIters = 2000;
+nIters = 1;
 initEst = ones(nArms, 1);
 epsilons = 1;
 epsconst = false;
 
 % define input
-input_file = 'versione8/input_CNR.xlsx';
-action_table = 'versione8/actionsTable.xlsx';
-exec_file = 'versione8/OPENNESS_RomaTermini_v8_InputExcel_linux.sh';
-dir_results = 'versione8/Risultati';
-dir_storage = 'versione8/Store';
+input_file = 'versione10/input_CNR.xlsx';
+action_table = 'versione10/actionsTable.xlsx';
+exec_file = 'versione10/OPENNESS_RomaTermini_v8_InputExcel_linux.sh';
+dir_results = 'versione10/Risultati';
+dir_storage = 'versione10/Store';
 
 % Run
 eg = EpsGreedy_CNR(stat, alphas, nIters, initEst, ...

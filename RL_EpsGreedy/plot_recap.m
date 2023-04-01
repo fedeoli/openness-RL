@@ -38,7 +38,7 @@ function plot_recap(eg)
     for i=1:eg.bandit.nActs
         plot(a(i,:),'o')
     end    
-    ylim([0.2 3])
+    ylim([0.2 eg.bandit.nActs])
     xlabel('iteration')
     ylabel('A'); 
     legend
