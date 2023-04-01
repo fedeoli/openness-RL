@@ -124,7 +124,7 @@ classdef Bandit_CNR < handle
                     obj.reward = rand();
                 end
             else
-                obj.tmp(obj.iter) = max(1,obj.tmp(obj.iter-1));
+                obj.tmp(obj.iter) = obj.tmp(max(1,obj.iter-1));
                 try
                     obj.reward(obj.iter) = obj.reward(max(1,obj.iter-1));
                 catch
